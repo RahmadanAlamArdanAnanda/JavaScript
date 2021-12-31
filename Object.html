@@ -1,0 +1,32 @@
+An object's properties are similar to variables; methods are similar to:
+functions
+
+
+What is the result of the following expression?
+var myString = "abcdef";
+document.write(myString.length);
+6
+
+
+Complete the expression to create an object constructor, taking into account that "height" and "weight" are properties and "calculate" is a method for the given object:
+function mathCalc (height, weight) {
+this.height = height;
+this.weight = weight;
+this.sampleCalc = calculate;
+}
+
+
+function Contact(name, number) {
+    this.name = name;
+    this.number = number;
+    this.print = function (){
+        var x = this.name
+        var y = this.number 
+        console.log(x+": "+y)
+    }
+ }                 
+
+var a = new Contact("David", 12345);
+var b = new Contact("Amy", 987654321)
+a.print();
+b.print();
